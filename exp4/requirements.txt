@@ -1,0 +1,7 @@
+nltk==3.8.1
+pandas==1.5.3
+pycocoevalcap==1.2
+rouge_score==0.1.2
+scikit_learn==1.2.1
+torch==2.0.1
+transformers==4.33.1
