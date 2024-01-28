@@ -10,7 +10,7 @@ if __name__ == '__main__':
     parser.add_argument('--text', default='gru', type=str, help='Specify the text model type')
 
     # 添加 image 参数
-    parser.add_argument('--image', default='alexnet', type=str, help='Specify the image model type')
+    parser.add_argument('--image', default='mobilenet', type=str, help='Specify the image model type')
 
     # 添加 epochs 参数
     parser.add_argument('--epochs', default=30, type=int, help='Specify the epochs')

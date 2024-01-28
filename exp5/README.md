@@ -63,12 +63,12 @@ exp5/
 ## 运行脚本程序
 例如
 ```
-(pytorch) /your/path/exp5> python main.py --text rnn --image alexnet --epochs 30
+(pytorch) /your/path/exp5> python main.py --text gru --image mobilenet --epochs 30
 ```
 此处提供了两种参数可供输入：
 
-1. --text：文本模型种类（可填rnn，lstm，gru，bert），默认值为rnn，选填。
-2. --image：图像模型种类（可填alexnet, mobilenet），默认值为alexnet，选填。
+1. --text：文本模型种类（可填rnn，lstm，gru，bert），默认值为gru，选填。
+2. --image：图像模型种类（可填alexnet, mobilenet），默认值为mobilenet，选填。
 3. --epochs：训练周期数，默认值为30，选填。
 
 注：如果选择BERT作为文本模型，对于显存要求较高。

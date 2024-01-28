@@ -159,9 +159,9 @@ def load_dataset(train_set_path, test_set_path, text_path, image_path, vocab, PA
         transforms.ToTensor(),
     ])
 
-    train_dataset = SentimentDataset(train_df, text_path, image_path, image_transform)
-    val_dataset = SentimentDataset(val_df, text_path, image_path, image_transform)
-    test_dataset = SentimentDataset(test_df, text_path, image_path, image_transform)
+    train_dataset = SentimentDataset(train_df, vocab, text_path, image_path, image_transform)
+    val_dataset = SentimentDataset(val_df, vocab, text_path, image_path, image_transform)
+    test_dataset = SentimentDataset(test_df, vocab, text_path, image_path, image_transform)
 
     train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True,
                               collate_fn=lambda batch: collate_fn(batch, pad_token=vocab[PAD_TOKEN]))
@@ -229,6 +229,7 @@ def train_model(device, model, optimizer, train_loader, val_loader, num, epochs)
     return model, val_acc
 
 
+# 预测测试集的标签并补全保存
 def predict(device, model, loader, test_set_path, result_path):
     all_preds = []
 
@@ -249,7 +250,7 @@ def predict(device, model, loader, test_set_path, result_path):
         tag_mapping.append(label_mapping[tag[i]])
 
     test_df = pd.read_csv(test_set_path, index_col=False)
-    test_df['tag'] = tag
+    test_df['tag'] = tag_mapping
     test_df.to_csv(result_path, index=False)
 
 
