@@ -1,7 +1,4 @@
 # 目录结构
-
----
-
 ```
 exp2/
 │  README.md                   // 帮助文档
@@ -16,9 +13,6 @@ exp2/
         solver2.py             // 主调用程序
 ```
 # 项目部署
-
----
-
 ## 进入工作目录
 ```
 C:\Users\user> cd /your/path/exp2

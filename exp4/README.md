@@ -1,7 +1,4 @@
 # 目录结构
-
----
-
 ```
 exp4/
 │  main.py                           // 脚本程序
@@ -43,9 +40,6 @@ exp4/
                     vocab.json
 ```
 # 项目部署
-
----
-
 **（推荐使用Anaconda的PyTorch环境）**
 ```
 (base) C:\Users\user> activate pytorch

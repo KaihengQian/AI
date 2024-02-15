@@ -1,7 +1,4 @@
 # 目录结构
-
----
-
 ```
 exp5/
 │  main.py                           // 脚本程序
@@ -41,9 +38,6 @@ exp5/
 └─result                             // 程序运行时创建，存放测试集预测结果
 ```
 # 项目部署
-
----
-
 **（推荐使用Anaconda的PyTorch环境）**
 ```
 (base) C:\Users\user> activate pytorch

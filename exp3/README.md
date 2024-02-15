@@ -1,7 +1,4 @@
 # 目录结构
-
----
-
 ```
 exp3/
 │  README.md                        // 帮助文档
@@ -37,9 +34,6 @@ exp3/
 └─models                            // 程序运行时创建，存放训练好的模型
 ```
 # 项目部署
-
----
-
 **（推荐使用Anaconda的PyTorch环境）**
 ```
 (base) C:\Users\user> activate pytorch

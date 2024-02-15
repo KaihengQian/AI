@@ -1,7 +1,4 @@
 # 目录结构
-
----
-
 ```
 exp1/
 │  MyScript.py                              // 脚本程序
@@ -29,9 +26,6 @@ exp1/
 └─result                                    // 程序运行时创建，存放预测结果
 ```
 # 项目部署
-
----
-
 **（推荐使用Anaconda的PyTorch环境）**
 ```
 (base) C:\Users\user> activate pytorch
